@@ -1,0 +1,26 @@
+<% content_for :title, "Detalles del Usuario" %>
+
+<header>
+  <h1>Detalles del Usuario</h1>
+</header>
+
+<div class="container">
+  <p style="color: green"><%= notice %></p>
+
+  <div class="usuario-details">
+    <p>Nombre: <%= @usuario.nombre.capitalize %></p>
+    <p>Email: <%= @usuario.email %></p>
+  </div>
+
+  <div class="usuario-actions actions">
+    <div class="button-group">
+      <%= link_to "Edit this usuario", edit_usuario_path(@usuario), class: "btn" %>
+      <%= link_to "Back to usuarios", usuarios_path, class: "btn" %>
+      <%= button_to "Destroy this usuario", @usuario, method: :delete, class: "btn" %>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2024 Tu Aplicación</p>
+</footer>

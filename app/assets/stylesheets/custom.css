@@ -1,0 +1,76 @@
+/* Estilos generales del body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Estilo para contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra horizontalmente */
+    margin: 20px; /* Espaciado alrededor */
+}
+
+/* Estilo para los mensajes de error */
+.error-message {
+    background-color: #ffdddd; /* Fondo rojo claro */
+    color: #d8000c; /* Color del texto de error */
+    border: 1px solid #d8000c; /* Borde rojo */
+    padding: 10px; /* Espaciado interior */
+    margin-bottom: 20px; /* Espacio inferior */
+    display: none; /* Ocultar por defecto */
+}
+
+/* Estilo para los detalles del usuario */
+.usuario-details {
+    text-align: center; /* Centra el texto en el contenedor */
+    margin-bottom: 20px; /* Espacio entre los detalles y los botones */
+}
+
+/* Estilo para el grupo de botones */
+.button-group {
+    display: flex; /* Usa flexbox para alinear los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+}
+
+/* Estilo para los botones */
+.btn {
+    background-color: #4CAF50; /* Color del botón */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block; /* Permite aplicar padding */
+}
+
+.btn:hover {
+    background-color: #45a049; /* Color del botón al pasar el ratón */
+}
+
+/* Estilo para acciones (botones de edición y eliminación) */
+.actions {
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+/* Estilo para el header */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Estilo para el footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
